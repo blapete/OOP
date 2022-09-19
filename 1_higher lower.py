@@ -10,7 +10,7 @@ def getCard(deckListIn):
     thisCard = deckListIn.pop()
     return thisCard
 
-# To shuffle the deck, returns a copy..
+# To shuffle the deck, returns a copy
 def shuffle(deckListIn):
     deckListOut = deckListIn.copy()
     random.shuffle(deckListOut)
