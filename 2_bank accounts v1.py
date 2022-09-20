@@ -1,5 +1,5 @@
 # Bank version 1
-# Single account
+# Single account w/o functions
 
 accountName = 'Joe'
 accountBalance = 100
