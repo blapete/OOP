@@ -60,8 +60,6 @@ def withdraw(amountToWithdraw, password):
 
 newAccount("Joe", 100, 'soup') # create an account
 
-
-
 while True:
     print()
     print('Press b to get the balance')
