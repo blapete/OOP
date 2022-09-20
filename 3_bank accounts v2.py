@@ -81,7 +81,6 @@ while True:
         if theBalance is not None:
             print('Your balance is:', theBalance)
 
-
     elif action == 'd':
         print('Deposit:')
         userDepositAmount = input('Please enter amount to deposit:' )
