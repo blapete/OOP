@@ -1,1 +1,1 @@
-Demonstrates procedural (structured) ---> object-oriented programming
+Combine code and data into cohesive units that are reusable
