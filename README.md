@@ -1,1 +1,1 @@
-Combine code and data into cohesive units that are reusable
+combine code and data into cohesive units that are reusable
