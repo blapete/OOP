@@ -16,7 +16,6 @@ def shuffle(deckListIn):
     random.shuffle(deckListOut)
     return deckListOut
 
-
 # Game Code
 print('Welcome to higher or lower.')
 print('You have to choose whether the next card to be shown will be higher or lower than the current card.')
@@ -31,7 +30,6 @@ for suit in SUIT_TUPLE:
         staringDeckList.append(cardDict)
 
 score = 50
-
 
 while True: # To play multiple games
     print()
