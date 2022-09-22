@@ -204,3 +204,11 @@ while True:
         
         
 print('Done')
+
+
+'''
+3 global variables
+Every function has an if statement to choose which global variables to access or change
+To add an account, another set of global variables and more if statements in each function
+Not a feasible approach
+'''

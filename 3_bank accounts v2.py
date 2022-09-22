@@ -120,3 +120,10 @@ while True:
 
 
 print('Done')
+
+
+'''
+A function is built for each operation, the main program is more readable
+Uses the global statement to access the variables that represent the account
+Functions should not modify the global variable
+'''
