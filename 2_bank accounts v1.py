@@ -1,10 +1,12 @@
-# Bank version 1
-# Single account w/o functions
+# Bank account version 1, Single account w/o functions
 
+
+# The only account
 accountName = 'Joe'
 accountBalance = 100
 accountPassword = 'soup'
 
+# Loop
 while True:
     print()
     print('Press b to get the balance')
@@ -15,8 +17,8 @@ while True:
     print()
 
     action = input('What do you want to do? ')
-    action = action.lower() # force lowercase
-    action = action[0] # just use first letter
+    action = action.lower()
+    action = action[0]
     print()
 
     if action == 'b':
@@ -38,11 +40,11 @@ while True:
             print('You cannot deposit a negative amount!')
         elif userPassword != accountPassword:
             print('Incorrect password')
-        else: # OK
+        else:
             accountBalance = accountBalance + userDepositAmount
             print('Your new balance is:', accountBalance)
 
-    elif action == 's': # Show
+    elif action == 's':
         print('Show:')
         print('     Name', accountName)
         print('     Balance:', accountBalance)
@@ -65,7 +67,7 @@ while True:
             print('Incorrect password for this account')
         elif userWithdrawAmount > accountBalance:
             print('You cannot withdraw more than you have in your account')
-        else: # OK
+        else:
             accountBalance = accountBalance - userWithdrawAmount
             print('Your new balance is:', accountBalance)
 

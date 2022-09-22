@@ -1,22 +1,25 @@
+# Card game
+
 import random
 
 # Constants
 SUIT_TUPLE = ('Spades', 'Hearts', 'Clubs', 'Diamonds')
 RANK_TUPLE = ('Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King')
-NCARDS = 5
+NCARDS = 10
 
-# To get a random card
+
+# function to get a random card
 def getCard(deckListIn):
     thisCard = deckListIn.pop()
     return thisCard
 
-# To shuffle the deck, returns a copy
+# function to shuffle the deck, returns a copy of the deck
 def shuffle(deckListIn):
     deckListOut = deckListIn.copy()
     random.shuffle(deckListOut)
     return deckListOut
 
-# Game Code
+
 print('Welcome to higher or lower.')
 print('You have to choose whether the next card to be shown will be higher or lower than the current card.')
 print('Getting it right adds 20 points; get it wrong and you lose 15 points.')
@@ -31,7 +34,9 @@ for suit in SUIT_TUPLE:
 
 score = 50
 
-while True: # To play multiple games
+
+# Game code
+while True:
     print()
     gameDeckList = shuffle(staringDeckList)
     currentCardDict = getCard(gameDeckList)
@@ -68,10 +73,11 @@ while True: # To play multiple games
     print('Your score is:', score)
     print()
     currentCardRank = nextCardRank
-    currentCardValue = nextCardValue # don't need current suit
+    currentCardValue = nextCardValue
 
     goAgain = input('To play again, press Enter, or "q" to quit: ')
     if goAgain == 'q':
         break
+
 
 print('OK bye')

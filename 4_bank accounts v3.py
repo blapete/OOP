@@ -1,14 +1,18 @@
-# Bank version 3
-# Two Accounts
+# Bank account version 3, Two Accounts w/ functions
 
+
+# Memory for account 1
 account0Name = ''
 account0Balance = 0
 account0Password = ''
+
+# Memory for account 2
 account1Name = ''
 account1Balance = 0
 account1Password = ''
-nAccounts = 0
 
+
+# function create a new account
 def newAccount(accountNumber, name, balance, password):
     global account0Name, account0Balance, account0Password
     global account1Name, account1Balance, account1Password
@@ -21,7 +25,8 @@ def newAccount(accountNumber, name, balance, password):
         account1Name = name
         account1Balance = balance
         account1Password = password
-   
+
+# function show accounts 
 def show():
     global account0Name, account0Balance, account0Password
     global account1Name, account1Balance, account1Password
@@ -39,6 +44,7 @@ def show():
         print('       Password:', account1Password)
         print()
 
+# function get the balance of an account
 def getBalance(accountNumber, password):
     global account0Name, account0Balance, account0Password
     global account1Name, account1Balance, account1Password
@@ -54,6 +60,7 @@ def getBalance(accountNumber, password):
             return None
         return account1Balance
 
+# function deposit into an account
 def deposit(accountNumber, amountToDeposit, password):
     global account0Name, account0Balance, account0Password
     global account1Name, account1Balance, account1Password
@@ -82,6 +89,7 @@ def deposit(accountNumber, amountToDeposit, password):
         account1Balance = account1Balance + amountToDeposit
         return account1Balance
   
+# function withdraw from an account
 def withdraw(accountNumber, amountToWithdraw, password):
     global account0Name, account0Balance, account0Password
     global account1Name, account1Balance, account1Password
@@ -119,10 +127,16 @@ def withdraw(accountNumber, amountToWithdraw, password):
         return account1Balance
 
 
-# Create one test account
+# Set initial account number to 0
+nAccounts = 0
+
+# Create an account to start with, account 0
 newAccount(nAccounts, "Joe", 100, 'soup')
+
+# Set account number to 1 for next account the user creates
 nAccounts = 1
 
+# Loop
 while True:
     print()
     print('Type b to get the balance')
@@ -134,8 +148,8 @@ while True:
     print()
 
     action = input('What do you want to do? ')
-    action = action.lower()  # force lowercase
-    action = action[0]  # just use first letter
+    action = action.lower()
+    action = action[0]
     print()
     
     if action == 'b':
@@ -169,7 +183,7 @@ while True:
         print('Your new account number is:', nAccounts)
         nAccounts = nAccounts + 1
 
-    elif action == 's':   #show all
+    elif action == 's':
         print('Show:')
         show()
 
@@ -187,5 +201,6 @@ while True:
         newBalance = withdraw(userAccountNumber, userWithdrawAmount, userPassword)
         if newBalance is not None:
             print('Your new balance is:', newBalance)
+        
         
 print('Done')

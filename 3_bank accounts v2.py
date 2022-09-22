@@ -1,15 +1,18 @@
-# Bank version 2
-# Single account w/ functions
+# Bank account version 2, Single account w/ functions
 
+
+# Memory for an account
 accountName = ''
 accountBalance = 0
 accountPassword = ''
+
 
 def newAccount(name, balance, password):
     global accountName, accountBalance, accountPassword
     accountName = name
     accountBalance = balance
     accountPassword = password
+
 
 def show():
     global accountName, accountBalance, accountPassword
@@ -18,6 +21,7 @@ def show():
     print('     Password:', accountPassword)
     print()
 
+
 def getBalance(password):
     global accountName, accountBalance, accountPassword
 
@@ -25,6 +29,7 @@ def getBalance(password):
         print('Incorrect password')
         return None
     return accountBalance
+
 
 def deposit(amountToDeposit, password):
     global accountName, accountBalance, accountPassword
@@ -39,6 +44,7 @@ def deposit(amountToDeposit, password):
 
     accountBalance = accountBalance + amountToDeposit
     return accountBalance
+
 
 def withdraw(amountToWithdraw, password):
     global accountName, accountBalance, accountPassword
@@ -58,8 +64,12 @@ def withdraw(amountToWithdraw, password):
     accountBalance = accountBalance - amountToWithdraw
     return accountBalance
 
-newAccount("Joe", 100, 'soup') # create an account
 
+# Create an account to perform operations on
+newAccount("Joe", 100, 'soup')
+
+
+# Loop
 while True:
     print()
     print('Press b to get the balance')
@@ -70,8 +80,8 @@ while True:
     print()
 
     action = input('What do you want to do? ')
-    action = action.lower() # force lowercase
-    action = action[0] # just use first letter
+    action = action.lower()
+    action = action[0]
     print()
 
     if action == 'b':
@@ -91,7 +101,7 @@ while True:
         if newBalance is not None:
             print('Your new balance is', newBalance)
 
-    elif action == 's': # Show
+    elif action == 's':
         print('Show:')
         show()
 
@@ -107,5 +117,6 @@ while True:
         newBalance = withdraw(userWithdrawAmount, userPassword)
         if newBalance is not None:
             print('Your new balance is', newBalance)
+
 
 print('Done')
