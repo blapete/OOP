@@ -58,6 +58,7 @@ def withdraw(accountNumber, amountToWithdraw, password):
     accountBalancesList[accountNumber] = accountBalancesList[accountNumber] - amountToWithdraw
     return accountBalancesList[accountNumber]
 
+
 # Create two accounts to start with
 print("Joe's account is account number:", len(accountNamesList))
 newAccount("Joe", 100, 'soup')
@@ -65,6 +66,7 @@ newAccount("Joe", 100, 'soup')
 print("Mary's account is account number:", len(accountNamesList))
 newAccount("Mary", 12345, 'nuts')
 
+# Loop
 while True:
     print()
     print('Press b to get the balance')
