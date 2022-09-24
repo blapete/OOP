@@ -28,8 +28,8 @@ Model real-world object in code:
 
 What data will represent that objects attributes? What operations can it perform?
 
-These two concepts are referred to as an object's state and behavior.
+These two concepts are referred to as an object's state and behavior
 
-The state is the data that the object remembers.
-The behaviors are the actions that the objects can do.
+The state is the data that the object remembers
+The behaviors are the actions that the objects can do
 '''
