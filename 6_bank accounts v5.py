@@ -138,3 +138,15 @@ while True:
 
 
 print('Done')
+
+
+'''
+All the data associated with one account can be found in a single dictionary
+When performing an operation, the function uses that account number as an index into the list of accounts
+
+The organization of the data is more logical
+However, each of the functions must still have access to the global list of accounts
+
+Granting functions access to all account data raises potential security risks
+Ideally, each function should only be able to affect the data of a single account
+'''
