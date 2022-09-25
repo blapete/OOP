@@ -1,0 +1,34 @@
+class LightSwitch():
+    def __init__(self):
+        self.switchIsOn = False
+
+    def turnOn(self):
+         self.switchIsOn = True
+
+    def turnOff(self):
+         self.switchIsOn = False
+
+
+
+Class:
+Code that defines what an object will remember (its data or state) and the things that it will be able to do (its functions or behavior).
+
+Instantiation:
+The process of creating an object from a class.
+
+Method:
+A function defined inside a class. A method always has at least one parameter, which is usually named self.
+
+
+
+- The first method in every class has the special name __init__.
+
+- Whenever an object is created from a class, this method runs automatically, any initialization code goes in __init__.
+
+- The __init__() method is not strictly required, but considered good practice to include it.
+
+- Python takes care of constructing the object (allocating memory) for you.
+
+- The special __init__() method is called the "initializer" method, where you give variables initial values.
+
+- Most other OOP languages require a method named new(), which is often referred to as a constructor.
