@@ -62,7 +62,7 @@ OOP
 
 - Methods can have both local variables and instance variables.
 
-- In a method any variable whose name does not start with self. is a local variable and will go away when that method exits, meanining other methods within the class can no longer use that variable.
+- In a method, any variable whose name does not start with self. is a local variable and will go away when that method exits, meanining other methods within the class can no longer use that variable.
 
 - Instance variables have object scope (they are available to all methods defined in a class).
 
