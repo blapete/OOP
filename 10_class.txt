@@ -54,11 +54,11 @@ SCOPE AND INSTANCE VARIABLES
 Scopes:
 
 Procedural & OOP
-1. Global
-2. Local (variables in a function)
+1. Global variable
+2. Local variable (variables in a function)
 
 OOP
-3. Object / class / instance (all the code in the class definition)
+3. Object/ class/ instance variable (variables in the class definition)
 
 - Methods can have both local variables and instance variables.
 
