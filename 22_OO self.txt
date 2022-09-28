@@ -1,0 +1,9 @@
+The variable name self is not a keyword in Python but is used by convention.
+
+Any other name could be used and the code would work fine.
+
+Using self is a universally accepted practice in Python.
+
+For code to be understood by other Python programmers, the name self is used as the first parameter in all methods of a class.
+
+Other OOP languages have the same concept but use other names, such as this or me.
