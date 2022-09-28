@@ -84,6 +84,5 @@ print()
 
 '''
 Internally, all instance variables of an object are kept as name value pairs in a Python dictionary
-
 You can inspect all the instance variables in an object by calling the built-in vars() functoin on any object
 '''
