@@ -2,6 +2,7 @@
 
 
 class TV():
+    
     def __init__(self):  
         self.isOn = False
         self.isMuted = False
