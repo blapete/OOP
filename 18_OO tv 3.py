@@ -2,6 +2,7 @@
 
 
 class TV():
+
     def __init__(self, brand, location):
         self.brand = brand
         self.location = location
@@ -74,7 +75,7 @@ class TV():
 
 
 # Main
-oTV1 = TV('Sony', 'Family room')
+oTV1 = TV('Sony', 'Family room') # * see below
 oTV2 = TV('Samsung', 'Bedroom')
 
 

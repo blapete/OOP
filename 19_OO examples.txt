@@ -1,0 +1,22 @@
+1. 
+
+A Student class to model a student in a course:
+- name
+- emailAddress
+- currentGrade
+
+2.
+
+A Player class for a game with multiple players:
+- name
+- points
+- health
+- location
+
+3. 
+
+A Person class for an address book:
+- name
+- address
+- phoneNumber
+- birthday
