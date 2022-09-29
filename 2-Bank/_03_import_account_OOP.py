@@ -1,4 +1,8 @@
-from _02_account_OOP import *
+# from _02_account_OOP import *
+
+# or
+
+from _02_account_OOP import Account
 
 
 
