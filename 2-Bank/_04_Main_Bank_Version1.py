@@ -4,7 +4,7 @@
 from _02_Account import *
 
 
-# Create 2
+# Starter accounts for testing
 
 oJoesAccount = Account('Joe', 100, 'JoesPassword')
 print("Created an account for Joe")

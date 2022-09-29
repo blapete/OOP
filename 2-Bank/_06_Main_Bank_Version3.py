@@ -10,13 +10,13 @@ accountsDict = {}
 nextAccountNumber = 0
 
 
-# Create 2
+# Starter accounts for testing
 
 oAccount = Account('Joe', 100, 'JoesPassword')
 joesAccountNumber = nextAccountNumber
 accountsDict[joesAccountNumber] = oAccount
 print('Account number for Joe is:', joesAccountNumber)
-nextAccountNumber = nextAccountNumber + 1
+nextAccountNumber = nextAccountNumber + 1 # increment the account number after assignment
 
 oAccount = Account('Mary', 12345, 'MarysPassword')
 marysAccountNumber = nextAccountNumber

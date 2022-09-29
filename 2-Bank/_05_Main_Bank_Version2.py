@@ -9,7 +9,7 @@ from _02_Account import *
 accountsList = [ ]  
 
 
-# Create 2
+# Starter accounts for testing
 
 oAccount = Account('Joe', 100, 'JoesPassword')
 accountsList.append(oAccount)
