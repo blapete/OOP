@@ -1,4 +1,4 @@
-# Version 1, Uses explicit variables for each Account object
+# Version 1, Using explicit variables for each Account object
 
 
 from _02_Account import *
@@ -28,7 +28,7 @@ oJoesAccount.show()
 oMarysAccount.show()
 
 
-# Create account
+# Create account from user input
 
 print()
 userName = input('What is the name for the new user account? ')
@@ -38,7 +38,9 @@ userPassword = input('What is the password you want to use for this account? ')
 oNewAccount = Account(userName, userBalance, userPassword)
 oNewAccount.show()
 
+
 # Deposit 100
+
 oNewAccount.deposit(100, userPassword)
 usersBalance = oNewAccount.getBalance(userPassword)
 print()
