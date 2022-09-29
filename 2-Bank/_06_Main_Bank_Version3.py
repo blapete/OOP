@@ -92,4 +92,13 @@ The users will get account information of other accounts
 TO handle large numbers of objects with unique identifiers, a dictionary is the go-to
 
 It allows to delete accounts without altering the account numbers associated with them
+
+To access methods:
+
+oAccount = accountsDict[accountNumber]
+oAccount.someMethodCall()
+
+Alternatively:
+
+accountsDict[accountNumber].someMethodCall()
 '''
