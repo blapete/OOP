@@ -24,7 +24,7 @@ accountsList[1].show()
 print()
 
 
-# Use the methods
+# Use some methods
 
 print('Calling methods of the two accounts ...')
 accountsList[0].deposit(50, 'JoesPassword')

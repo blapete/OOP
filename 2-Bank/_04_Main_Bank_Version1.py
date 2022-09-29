@@ -14,7 +14,7 @@ oJoesAccount.show()
 oMarysAccount.show()
 
 
-# Use the methods
+# Use some methods
 
 print('Calling methods of the two accounts ...')
 oJoesAccount.deposit(50, 'JoesPassword')
