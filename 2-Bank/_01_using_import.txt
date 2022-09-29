@@ -2,7 +2,7 @@ How to import class code:
 
 Place the code of the class in a file by itself and import into the program that uses it.
 
-02_OO account.py is just the definition of a class.
+_02_account_OOP.py is just the definition of a class.
 
 As classes become larger and more complicated, saving each of them in a separate file is the preferred way to work with them.
 
