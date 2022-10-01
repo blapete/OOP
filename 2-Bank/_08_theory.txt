@@ -1,4 +1,4 @@
-The code in the previous example does two things:
+The code in the previous example (_07 and _06) does two things:
 1. The program provides a simple menu interface.
 2. When an action is chosen, it collects data and makes a call to a method of an Account manager object.
 In this way, there is one large main program that does two different tasks.
