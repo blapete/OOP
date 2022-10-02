@@ -1,0 +1,36 @@
+The try/except block:
+
+try:
+    # code that may cause a error
+except <some exception name>:
+    # code to handle the exception
+
+When a runtime error/abrnomal condition occurs in a function or method from the Python Standard Library,
+
+that function or method signals the error by raising an exception. (throwing/generating an exception).
+
+
+
+If the code in the try block results in an exception, control is passed to the except statement.
+
+If the exception matches the exception(s) listed in the except statement, control is transferred to the code of the except clause.
+
+That indented block typically contains code to report and/or recover from the error.
+
+Error occurs - exception thrown, Exception matches except statement - exception caught
+
+
+
+age = input('Please enter your age: ')
+try:                                                # attempt to convert integer                                          
+    age = int(age)
+except ValueError:                                  # if an exception is raised trying to convert                                
+    print('Sorry, that was not a valid number')
+
+
+
+Calls to the Python Standard Library can generate standard exceptions such as: TypeError, ValueError, NameError, ZeroDivisionError, more.
+
+IF the user enters letters or a floating-point number, the built-in int() function raises a ValueError exception.
+
+Control would be transferred to the code in the except block.
