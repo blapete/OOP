@@ -2,7 +2,6 @@
 
 
 # Define a custom exception
-
 class AbortTransaction(Exception):
     '''raise this exception to abort a bank transaction'''
     pass
@@ -44,7 +43,7 @@ class Account():
         self.balance = self.balance - amountToWithdraw
         return self.balance
 
-    # 
+    # For testing
     def show(self):
         print('       Name:', self.name)
         print('       Balance:', self.balance)
