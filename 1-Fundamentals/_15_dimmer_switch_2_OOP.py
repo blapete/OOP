@@ -2,6 +2,7 @@
 
 
 class DimmerSwitch():
+
     def __init__(self):
         self.isOn = False
         self.brightness = 0
@@ -20,7 +21,7 @@ class DimmerSwitch():
         if self.brightness > 0:
             self.brightness = self.brightness - 1
 
-    # For debugging
+    # For testing
     def showState(self):
         print('Switch is on?', self.isOn)
         print('Brightness is:', self.brightness)   

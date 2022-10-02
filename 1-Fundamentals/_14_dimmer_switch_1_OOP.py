@@ -2,6 +2,7 @@
 
 
 class DimmerSwitch():
+
     # State
     def __init__(self):
         self.switchIsOn = False
@@ -30,18 +31,22 @@ class DimmerSwitch():
 
 # Main
 oDimmer = DimmerSwitch() 
-oDimmer.turnOn() # on
+
+
+oDimmer.turnOn()       # ON
 oDimmer.raiseLevel()
 oDimmer.raiseLevel()
 oDimmer.raiseLevel()
 oDimmer.raiseLevel()
 oDimmer.raiseLevel()
 oDimmer.show()
+
 oDimmer.lowerLevel()
 oDimmer.lowerLevel()
-oDimmer.turnOff() # off
+oDimmer.turnOff()      # OFF
 oDimmer.show()
-oDimmer.turnOn() # on
+
+oDimmer.turnOn()       # ON
 oDimmer.raiseLevel()
 oDimmer.raiseLevel()
 oDimmer.raiseLevel()

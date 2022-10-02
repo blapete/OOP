@@ -6,6 +6,7 @@ accountName = 'Joe'
 accountBalance = 100
 accountPassword = 'soup'
 
+
 # Loop
 while True:
     print()
@@ -70,5 +71,6 @@ while True:
         else:
             accountBalance = accountBalance - userWithdrawAmount
             print('Your new balance is:', accountBalance)
+
 
 print('Done')

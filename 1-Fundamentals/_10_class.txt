@@ -10,8 +10,6 @@ class LightSwitch():
 
 
 
-
-
 Class:
 Code that defines what an object will remember (its data or state) and the things that it will be able to do (its functions or behavior).
 
@@ -29,8 +27,6 @@ Data, plus the code that acts on that data, over time.
 
 
 
-
-
 CLASS, OBJECTS, AND INSTANTIATION
 
 - The first method in every class has the special name __init__.
@@ -44,8 +40,6 @@ CLASS, OBJECTS, AND INSTANTIATION
 - The special __init__() method is called the "initializer" method, where you give variables initial values.
 
 - Most other OOP languages require a method named new(), which is often referred to as a constructor.
-
-
 
 
 
@@ -74,8 +68,6 @@ OOP
 
 
 
-
-
 METHODS vs FUNCTION
 
 -  All methods of a class must be indented under the class statement.
@@ -83,8 +75,6 @@ METHODS vs FUNCTION
 -  All methods have a special first paramter that (by conventions) is named self.
 
 -  Methods in a class can use instance variables, written in the form of self.<variableName>.
-
-
 
 
 

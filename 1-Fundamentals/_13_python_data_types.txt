@@ -15,7 +15,6 @@ The str class gives us a number of methods to call with strings, including myStr
 All lists are instances of the list class, which has many methods including myList.append(), myList.count(), myList.index(), and so on.
 
 
-----------
 
 - When you write a class you are defining a new data type.
 - Your code provides the details by defining what data it maintains and what operations it can perform.
@@ -25,7 +24,6 @@ All lists are instances of the list class, which has many methods including myLi
 <class 'LightSwitch'>
 
 
-----------
 
 - A class defined what an object will look like when you instantiate one.
 - An object is a set of instance variables and the code of the methods in the class from which the object was instantiatied.

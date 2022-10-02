@@ -1,6 +1,8 @@
 # Card game
 
+
 import random
+
 
 # Constants
 SUIT_TUPLE = ('Spades', 'Hearts', 'Clubs', 'Diamonds')
@@ -26,6 +28,7 @@ print('Getting it right adds 20 points; get it wrong and you lose 15 points.')
 print('You have 50 points to start.')
 print()
 
+
 staringDeckList = []
 for suit in SUIT_TUPLE:
     for thisValue, rank in enumerate(RANK_TUPLE):
@@ -35,7 +38,7 @@ for suit in SUIT_TUPLE:
 score = 50
 
 
-# Game code
+# Game
 while True:
     print()
     gameDeckList = shuffle(staringDeckList)

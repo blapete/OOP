@@ -13,6 +13,7 @@ def turnOff():
 # Main
 switchIsOn = False
 
+
 # Test code
 print(switchIsOn)
 turnOn()

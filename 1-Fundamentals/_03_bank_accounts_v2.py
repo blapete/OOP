@@ -13,14 +13,12 @@ def newAccount(name, balance, password):
     accountBalance = balance
     accountPassword = password
 
-
 def show():
     global accountName, accountBalance, accountPassword
     print('     Name', accountName)
     print('     Balance:', accountBalance)
     print('     Password:', accountPassword)
     print()
-
 
 def getBalance(password):
     global accountName, accountBalance, accountPassword
@@ -29,7 +27,6 @@ def getBalance(password):
         print('Incorrect password')
         return None
     return accountBalance
-
 
 def deposit(amountToDeposit, password):
     global accountName, accountBalance, accountPassword
@@ -44,7 +41,6 @@ def deposit(amountToDeposit, password):
 
     accountBalance = accountBalance + amountToDeposit
     return accountBalance
-
 
 def withdraw(amountToWithdraw, password):
     global accountName, accountBalance, accountPassword

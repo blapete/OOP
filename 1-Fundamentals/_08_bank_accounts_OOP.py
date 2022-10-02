@@ -2,6 +2,7 @@
 
 
 class Account():
+    
     def __init__(self, name, balance, password):
         self.name = name
         self.balance = int(balance)
@@ -41,7 +42,7 @@ class Account():
             return None
         return self.balance
 
-    # Added for debugging
+    # For testing
     def show(self):
         print('       Name:', self.name)
         print('       Balance:', self.balance)

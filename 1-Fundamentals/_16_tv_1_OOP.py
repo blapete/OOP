@@ -74,9 +74,8 @@ class TV():
 oTV = TV()  # create a TV object
 
 
-oTV.power()
+oTV.power()           # ON
 oTV.showInfo()
-
 
 oTV.channelUp()
 oTV.channelUp()
@@ -84,17 +83,15 @@ oTV.volumeUp()
 oTV.volumeUp()
 oTV.showInfo()
 
-
-oTV.power()
-oTV.showInfo()
-oTV.power()
+oTV.power()           # OFF
 oTV.showInfo()
 
+oTV.power()           # ON
+oTV.showInfo()
 
 oTV.volumeDown()
 oTV.mute()
 oTV.showInfo()
-
 
 oTV.setChannel(11)
 oTV.setChannel(99)

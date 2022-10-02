@@ -1,11 +1,16 @@
 1.
+A well-written class can be easily reused in many different programs. 
 
-A well-written class can be easily reused in many different programs. Classes do not need to access global data. Instead, objects provide code and data at the same level.
+Classes do not need to access global data. 
+
+Instead, objects provide code and data at the same level.
 
 2.
+OOP can greatly reduce the number of global variables required, because a class provides a framework in which data and code that acts on the data exist in one grouping. 
 
-OOP can greatly reduce the number of global variables required, because a class provides a framework in which data and code that acts on the data exist in one grouping. This also tends to make code easier to debug.
+This also tends to make code easier to debug.
 
 3.
+Objects created from a class only have access to their own data - their set of the instance variables in the class. 
 
-Objects created from a class only have access to their own data - their set of the instance variables in the class. Even when there are multiple objects created from the same class, they do not have access to each other's data.
+Even when there are multiple objects created from the same class, they do not have access to each other's data.

@@ -1,7 +1,11 @@
 The common problem of the previous versions:
+
 All the data the functions operate on is stored in one or more global variables, this is bad practice.
 
 
+
 1. Any function that uses global data cannot be easily reused in a different program.
+
 2. Beacuse variable values can change anywhere, it can be difficult to debug and maintain programs written this way.
+
 3. Having the ability to modify any data in a large data structure can lead to errors, such as accidentally overwriting data the function was not intended to touch.

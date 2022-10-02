@@ -22,7 +22,6 @@ class DimmerSwitch():
         if self.brightness > 0:
             self.brightness = self.brightness - 1
 
-
     def show(self):
         print('Label:', self.label)
         print('Switch is on?', self.switchIsOn)
@@ -30,7 +29,6 @@ class DimmerSwitch():
 
 
 # Create 3 DimmerSwitch objects:
-
 oDimmer1 = DimmerSwitch('Dimmer1')
 print(type(oDimmer1))
 print(oDimmer1)
@@ -45,6 +43,7 @@ oDimmer3 = DimmerSwitch('Dimmer3')
 print(type(oDimmer3))
 print(oDimmer3)
 print()
+
 
 '''
 Output:
@@ -79,8 +78,10 @@ When creating a new instance of an object, Python allocates memory to represent 
 No duplicates of the class's code are made
 '''
 
+
 print('oDimmer1 variables:', vars(oDimmer1))
 print()
+
 
 '''
 Internally, all instance variables of an object are kept as name value pairs in a Python dictionary
