@@ -1,0 +1,49 @@
+The raise statement and custom exceptions:
+
+raise <ExceptionName>('Any string to describe the error>')      # standard syntax/approach
+
+If the code detects a runtime error, the programmer can use the raise statement to signal an exception.
+
+For the <ExceptionName>, there are three options.
+
+
+
+1.
+If there is a standard exception that matches the error detected (TypeError, ValueError, NameError, ZeroDivisionError, etc.), that can be used.
+
+The programmer can add their own description string.
+
+raiseValueError('You need to specify an integer')
+
+
+
+2.
+The programmer can use the generic Exception exception.
+
+Generally not recommended, the standard practice is to look for exceptions by name.
+
+raise Exception('The amount cannot be a floating-point number)
+
+
+
+3. (best)
+The programmer can create their own custom exception.
+
+A unique name can be given to the exception, and then it can be raised in the code.
+
+Creating unique exceptions means the programmer can exlicitly check for these exceptions by name in a higher level of the code.
+
+class <CustomExceptionName>(Exception):
+    pass
+
+
+
+Typically the raise statement causes the current function or method to exit and transfers control back to the caller.
+
+If the caller contains an except clause that catches the exception, then execution continues inside that except clause.
+
+If not, that function or method exits.
+
+The control is transferred back through the sequence of calls until an except clause catches the exception. 
+
+If no except clause catches the exception, the program quits and Python displays the error.
