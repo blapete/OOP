@@ -5,13 +5,11 @@ from _02_Account import *
 
 
 # Memory for accounts
-
 accountsDict = {}
 nextAccountNumber = 0
 
 
 # Starter accounts for testing
-
 oAccount = Account('Joe', 100, 'JoesPassword')
 accountsDict[nextAccountNumber] = oAccount
 print('Account number for Joe is:', nextAccountNumber)
@@ -35,7 +33,7 @@ while True:
 
     action = input('What do you want to do? ')
     action = action.lower()
-    action = action[0]  # grab the first letter
+    action = action[0]  # get the first letter
     print()
     
     if action == 'b':

@@ -5,7 +5,6 @@ from _02_Account import *
 
 
 # Starter accounts for testing
-
 oJoesAccount = Account('Joe', 100, 'JoesPassword')
 print("Created an account for Joe")
 oMarysAccount = Account('Mary', 12345, 'MarysPassword')
@@ -15,7 +14,6 @@ oMarysAccount.show()
 
 
 # Use some methods
-
 print('Calling methods of the two accounts ...')
 oJoesAccount.deposit(50, 'JoesPassword')
 oMarysAccount.withdraw(345, 'MarysPassword')
@@ -23,13 +21,11 @@ oMarysAccount.deposit(100, 'MarysPassword')
 
 
 # Show accounts
-
 oJoesAccount.show()
 oMarysAccount.show()
 
 
 # Create account from user input
-
 print()
 userName = input('What is the name for the new user account? ')
 userBalance = input('What is the starting balance for this account? ')
@@ -40,7 +36,6 @@ oNewAccount.show()
 
 
 # Deposit 100
-
 oNewAccount.deposit(100, userPassword)
 usersBalance = oNewAccount.getBalance(userPassword)
 print()

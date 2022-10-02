@@ -8,7 +8,6 @@ oBank = Bank()
 
 
 # Starter accounts for testing
-
 joesAccountNumber = oBank.createAccount('Joe', 100, 'JoesPassword')
 print("Joe's account number is:", joesAccountNumber)
 
@@ -60,15 +59,16 @@ while True:
     else:
         print('Sorry, that was not a valid action.  Please try again.')
         
+
 print('Done')
 
 
 '''
-This bank system demonstrates what an object is.
+This bank system demonstrates what an object is
 
-Object: Data, plus code that acts on that data, over time.
+Object: Data, plus code that acts on that data, over time
 
-This code demonatrates how an object (like an Account object) has a life span. 
+This code demonatrates how an object (like an Account object) has a life span
 
-The life span is from whenever it was created to whenever it is deleted.
+The life span is from whenever it was created to whenever it is deleted
 '''

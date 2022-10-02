@@ -5,13 +5,11 @@ from _02_Account import *
 
 
 # Memory for accounts
-
 accountsDict = {}
 nextAccountNumber = 0
 
 
 # Starter accounts for testing
-
 oAccount = Account('Joe', 100, 'JoesPassword')
 joesAccountNumber = nextAccountNumber
 accountsDict[joesAccountNumber] = oAccount
@@ -30,7 +28,6 @@ print()
 
 
 # Use some methods
-
 print('Calling methods of the two accounts ...')
 accountsDict[joesAccountNumber].deposit(50, 'JoesPassword')
 accountsDict[marysAccountNumber].withdraw(345, 'MarysPassword')
@@ -38,13 +35,11 @@ accountsDict[marysAccountNumber].deposit(100, 'MarysPassword')
 
 
 # Show accounts
-
 accountsDict[joesAccountNumber].show()
 accountsDict[marysAccountNumber].show()
 
 
 # Create account from user input
-
 print()
 userName = input('What is the name for the new user account? ')
 userBalance = input('What is the starting balance for this account? ')
@@ -58,12 +53,10 @@ nextAccountNumber = nextAccountNumber + 1
 
 
 # Show the newly created user account
-
 accountsDict[newAccountNumber].show()
 
 
 # Deposit 100
-
 accountsDict[newAccountNumber].deposit(100, userPassword)
 usersBalance = accountsDict[newAccountNumber].getBalance(userPassword)
 print()

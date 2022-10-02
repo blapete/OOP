@@ -5,12 +5,10 @@ from _02_Account import *
 
 
 # Memory for accounts
-
 accountsList = [ ]  
 
 
 # Starter accounts for testing
-
 oAccount = Account('Joe', 100, 'JoesPassword')
 accountsList.append(oAccount)
 print("Joe's account number is 0")
@@ -25,7 +23,6 @@ print()
 
 
 # Use some methods
-
 print('Calling methods of the two accounts ...')
 accountsList[0].deposit(50, 'JoesPassword')
 accountsList[1].withdraw(345, 'MarysPassword')
@@ -33,13 +30,11 @@ accountsList[1].deposit(100, 'MarysPassword')
 
 
 # Show accounts
-
 accountsList[0].show()
 accountsList[1].show()
 
 
 # Create account from user input
-
 print()
 userName = input('What is the name for the new user account? ')
 userBalance = input('What is the starting balance for this account? ')
@@ -50,13 +45,11 @@ accountsList.append(oAccount)  # append to list of accounts
 
 
 # Show the newly created user account
-
 print('Created new account, account number is 2')
 accountsList[2].show()
 
 
 # Deposit 100
-
 accountsList[2].deposit(100, userPassword)
 usersBalance = accountsList[2].getBalance(userPassword)
 print()
@@ -64,7 +57,6 @@ print("After depositing 100, user's balance is:", usersBalance)
 
 
 # Show new account
-
 accountsList[2].show()
 
 
