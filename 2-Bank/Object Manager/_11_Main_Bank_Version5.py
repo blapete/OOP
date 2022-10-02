@@ -64,5 +64,11 @@ print('Done')
 
 
 '''
+This bank system demonstrates what an object is.
 
+Object: Data, plus code that acts on that data, over time.
+
+This code demonatrates how an object (like an Account object) has a life span. 
+
+The life span is from whenever it was created to whenever it is deleted.
 '''
