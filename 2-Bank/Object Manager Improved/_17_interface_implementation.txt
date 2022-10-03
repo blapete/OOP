@@ -1,0 +1,31 @@
+Implementation:
+The actual code of the class, which shows HOW an object does what it does.
+
+Interface:
+The collection of methods (and expected parameters) a class provides, which shows WHAT an object created from the class can do.
+
+
+
+There are two ways to look at a class:
+
+By focusing on what it is capable of doing (the interface)
+
+How it works internally (the implementation)
+
+
+
+The creator or maintainer of a class needs to fully understand the implementation:
+
+The code of all of the methods and how they work together to affect the instance variables.
+
+
+
+If purely writing code to USE a class, the programmer only needs to concern about the interface:
+
+The different methods that are available in the class, the values that need to be passed into each, and any value(s) that are returned from the methods.
+
+
+
+As long as the interface of a class does not change, the class's implementation can change at any time.
+
+If a method can be implemented in a faster or more efficient way, changing the relevant code inside the class will not have any bad side effects on any other part of the program.
