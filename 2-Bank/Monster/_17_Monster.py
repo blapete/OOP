@@ -32,7 +32,7 @@ for i in range(N_MONSTERS):
     monsterList.append(oMonster)  # add Monster to our list
 
 
-# Later, when playing the game ...
+# Later, when playing the game
 for oMonster in monsterList:
     oMonster.move()
 
