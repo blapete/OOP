@@ -1,0 +1,36 @@
+Each pixel on the screen is made up of a combination of three colors: 
+
+Red, Green, Blue (RGB)
+
+
+
+The color displayed in any pixel is composed of some amount of red, green, and blue.
+
+The amount of each is specified as a value from 0, meaning none, to 255, meaning full intensity.
+
+Therefor, there are 256 x 256 x 256 possible combinations, or 16,777,216 possible colors for each pixel (16 million).
+
+
+
+Colors in pygame are given as RGB values and they are written as Python tuples of 3 numbers.
+
+Example how to create constants for the main colors:
+
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+
+
+
+A color can be created using any combination of three numbers between 0 and 255.
+
+Example of a few more colors:
+
+BLACK = (0, 0, 0)             # no red, no green, no blue
+WHITE = (255, 255, 255)       # full red, full green, full blue
+DARK_GRAY = (75, 75, 75)
+MEDIUM_GRAY = (128, 128, 128)
+LIGHT_GRAY = (175, 175, 175)
+TEAL = (0, 128, 128)          # no red, half-strength green, half-strength blue
+YELLOW = (255, 255, 0)
+PURPLE = (128, 0, 128)
