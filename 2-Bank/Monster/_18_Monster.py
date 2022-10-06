@@ -12,7 +12,7 @@ class Monster():
         self.myRow = random.randrange(self.nRows) #chooses a random row
         self.myCol = random.randrange(self.nCols) #chooses a random col
         self.mySpeedX = random.randrange(-maxSpeed, maxSpeed) + 1 # chooses an X speed
-        self.mySpeedY = random.randrange(-maxSpeed, maxSpeed + 1) # chooses a Y speed
+        self.mySpeedY = random.randrange(-maxSpeed, maxSpeed) + 1 # chooses a Y speed
         # Set other instance variables like health, power, etc.
 
     def move(self):
