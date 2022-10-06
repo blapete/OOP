@@ -7,7 +7,7 @@ The user can click on something during any frame.
 The program must not only respond to that input but keep track of everything is needs to draw in the window.
 
 
-
+TBD
 - Bring up a blank window
 - Show an image
 - Detect a mouse click
