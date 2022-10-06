@@ -1,0 +1,21 @@
+Pygame programs run constantly in a loop, checking for events.
+
+Think of the program as an animation where each pass through the main loop is one frame.
+
+The user can click on something during any frame.
+
+The program must not only respond to that input but keep track of everything is needs to draw in the window.
+
+
+
+- Bring up a blank window
+- Show an image
+- Detect a mouse click
+- Detect both single and continuous key presses
+- Create a simple animation
+- Play sounds effects and background sounds
+- Draw shapes
+
+- Animate many objects
+- Build and react to a button
+- Create a text display field
