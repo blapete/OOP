@@ -1,3 +1,4 @@
+# packages
 import pygame
 from pygame.locals import *
 import sys
@@ -10,16 +11,16 @@ WINDOW_HEIGHT = 480
 FRAMES_PER_SECOND = 30
 
 
-# initialize pygame
+# initialize
 pygame.init()
 
 
-# build window and clock
+# build window/clock
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
 
-# start looping
+# start the loop
 while True:
 
     for event in pygame.event.get():
