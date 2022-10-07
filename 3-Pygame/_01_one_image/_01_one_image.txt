@@ -1,0 +1,41 @@
+Two parts to showing a graphic image.
+
+1. Load the image into the computer's memory.
+
+2. Display the image in the application window.
+
+
+
+Path:
+
+A String that uniquely identifies the location of a file or folder on a computer.
+
+To load a graphic or sound file into the program, the path to the file must be specified.
+
+Also called a pathname.
+
+
+
+Two types of paths.
+
+1. Relative path
+
+A relative to the current folder (current working directory).
+
+IDEs set the current folder to the one containing the main python program so relative paths can be used.
+
+The relative path for a graphic file in the same folder as the main Python file would just be the filename as a string ex. 'ball.png'.
+
+If it were in a folder that is in the same file as the main Python program it would be 'folder/ball.png'.
+
+2. Absolute path
+
+If the program will be run from the command line, then absolute paths need to be constructed for all files.
+
+An absolute path is one that starts from the root of the filesystem and includes full hierarchy of folders to the file.
+
+To build an absolute path to any file:
+
+from pathlib import Path
+BASE_PATH = Path(__file__).resolve().parent
+pathToBall = BASE_PATH + 'images/ball.png'
