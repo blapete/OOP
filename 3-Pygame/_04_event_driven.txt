@@ -1,4 +1,4 @@
-GUIs introduce a new model of computing known as the event-driven model.
+GUIs introduce a model of computing known as the event-driven model.
 
 
 
