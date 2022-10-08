@@ -1,9 +1,11 @@
+# packages (1)
 import pygame
 from pygame.locals import *
 import sys
 import random
 
 
+# game constants (2)
 BLACK = (0, 0, 0)
 WINDOW_WIDTH = 640
 WINDOW_HEIGHT = 480
@@ -14,25 +16,28 @@ MAX_WIDTH = WINDOW_WIDTH - BALL_WIDTH_HEIGHT
 MAX_HEIGHT = WINDOW_HEIGHT - BALL_WIDTH_HEIGHT
 
 
+# initialize pygame (3)
 pygame.init()
-
-
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
 
-# load assets
+# load assets (4)
 ballImage = pygame.image.load('images/ball.png')
 
 
+# game variables (5)
 ballX = random.randrange(MAX_WIDTH)
 ballY = random.randrange(MAX_HEIGHT)
 ballRect = pygame.Rect(ballX, ballY, BALL_WIDTH_HEIGHT, BALL_WIDTH_HEIGHT)
  
 
+# infinity loop (6)
 while True:
 
+    # 7 Check events (7)
     for event in pygame.event.get():
+
         if event.type == pygame.QUIT:           
             pygame.quit()  
             sys.exit()
@@ -43,12 +48,16 @@ while True:
                 ballY = random.randrange(MAX_HEIGHT)
                 ballRect = pygame.Rect(ballX, ballY, BALL_WIDTH_HEIGHT, BALL_WIDTH_HEIGHT)
 
+    # Clear window (9)
     window.fill(BLACK)
     
+    # Draw window (10)
     window.blit(ballImage, (ballX, ballY))    
 
+    # Update window (11)
     pygame.display.update()
 
+    # Control loop speed (12)
     clock.tick(FRAMES_PER_SECOND)
 
 
