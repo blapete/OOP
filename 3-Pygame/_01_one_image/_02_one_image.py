@@ -10,6 +10,8 @@ FRAMES_PER_SECOND = 30
 
 
 pygame.init()
+
+
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
