@@ -64,7 +64,7 @@ pygame.display.set_mode() creates a window object - the dimensions are passed in
 pygame.time.Clock() creates a clock object - used at the bottom of the main loop to maintain maximum frame rate
 
 4.
-Add code here to load external images, sounds, and so on from the disk
+Code here to load external images, sounds, and so on from the disk
 
 5.
 Initialize any variables that the program will use
@@ -81,7 +81,7 @@ If no event has happeed this code is skipped
 Commonly called the event loop
 
 8.
-Add code here that needs to run in every frame
+Code here that needs to run in every frame
 This could involve moving things in the window or checking for collisions between elements
 
 9.
@@ -104,7 +104,7 @@ pygame.display.update()
 
 
 12.
-Add code here to make pygame wait until a given amount of time has elapsed 
+Code here to make pygame wait until a given amount of time has elapsed 
 This makes the frames of the program run at the frame rate that was specified, ensures consistency
 clock.tick()
 '''
