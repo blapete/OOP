@@ -9,6 +9,7 @@ WINDOW_HEIGHT = 480
 FRAMES_PER_SECOND = 30
 
 
+# initialize pygame
 pygame.init()
 
 
@@ -16,6 +17,7 @@ window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
 
+# load assets
 ballImage = pygame.image.load('images/ball.png')
 
 

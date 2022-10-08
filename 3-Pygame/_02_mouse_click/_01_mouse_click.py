@@ -21,6 +21,7 @@ window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
 
+# load assets
 ballImage = pygame.image.load('images/ball.png')
 
 

@@ -11,11 +11,11 @@ WINDOW_HEIGHT = 480
 FRAMES_PER_SECOND = 30
 
 
-# initialize
+# initialize pygame
 pygame.init()
 
 
-# build window/clock
+# build window and clock object
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
