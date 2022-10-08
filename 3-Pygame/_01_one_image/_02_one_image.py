@@ -1,40 +1,45 @@
+# packages (1)
 import pygame
 from pygame.locals import *
 import sys
 
 
+# game constants (2)
 BLACK = (0, 0, 0)
 WINDOW_WIDTH = 640
 WINDOW_HEIGHT = 480
 FRAMES_PER_SECOND = 30
 
 
-# initialize pygame
+# initialize pygame (3)
 pygame.init()
-
-
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
  
 
-# load assets
+# load assets (4)
 ballImage = pygame.image.load('images/ball.png')
 
 
+# infinity loop (6)
 while True:
 
+    # 7 Check events (7)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:           
             pygame.quit()  
             sys.exit()
 
+    # Clear window (9)
     window.fill(BLACK)
     
-    # draw ball
+    # Draw window (10)
     window.blit(ballImage, (100, 200))    
 
+    # Update window (11)
     pygame.display.update()
 
+    # Control loop speed (12)
     clock.tick(FRAMES_PER_SECOND)
 
 
