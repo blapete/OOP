@@ -34,7 +34,7 @@ while True:
 
     # 8 any "per frame" actions
     
-    # 9 clear window
+    # 9 clear window before drawing it again
     window.fill(BLACK)
     
     # 10 draw window elements
