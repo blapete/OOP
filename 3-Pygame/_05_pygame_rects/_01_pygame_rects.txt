@@ -16,28 +16,49 @@ Rect objects maintain a number of attributes (including the rectangle left, top,
 
 They can be accessed using dot syntax:
 
-<rect>.x                The x-coordinate of the left edge of the rect
-<rect>.y                The y-coordinate of the top edge of the rect
-<rect>.left             The x-coordinate of the left edge of the rect (same as <rect>.x)
-<rect>.top              The y-coordinate of the top edge of the rect (same as <rect>.y)
-<rect>.right            The x-coordinate of the right edge of the rect
-<rect>.bottom           The y-coordinate of the bottom edge of the rect
-<rect>.topleft          A two-integer tuple: the coordinates of the upper-left corner of the rect
-<rect>.bottomLeft       A two-integer tuple: the coordinates of the lower-left corner of the rect
-<rect>.topright         A two-integer tuple: the coordinates of the upper-right corner of the rect
-<rect>.bottomright      A two-integer tuple: the coordinates of the lower-right corner of the rect
-<rect>.midtop           A two-integer tuple: the coordinates of the midpoint of the top edge of the rect
-<rect>.midleft          A two-integer tuple: the coordinates of the midpoint of the left edge of the rect
-<rect>.midbottom        A two-integer tuple: the coordinates of the midpoint of the bottom edge of the rect
-<rect>.midright         A two-integer tuple: the coordinates of the midpoint of the right edge of the rect
-<rect>.center           A two-integer tuple: the coordinates at the center of the rect
-<rect>.centerx          The x-coordinate of the center of the width of the rect
-<rect>.centery          The y-coordinate of the center of the height of the rect
-<rect>.size             A two-integer tuple: the (width, height) of the rect
-<rect>.width            The width of the rect
-<rect>.height           The height of the rect
-<rect>.w                The width of the rect (same as <rect>.width)
-<rect>.h                The height of the rect (same as <rect>.height)
+<rect>.x               The x-coordinate of the left edge of the rect
+
+<rect>.y               The y-coordinate of the top edge of the rect
+
+<rect>.left            The x-coordinate of the left edge of the rect (same as <rect>.x)
+
+<rect>.top             The y-coordinate of the top edge of the rect (same as <rect>.y)
+
+<rect>.right           The x-coordinate of the right edge of the rect
+
+<rect>.bottom          The y-coordinate of the bottom edge of the rect
+
+<rect>.topleft         A two-integer tuple: the coordinates of the upper-left corner of the rect
+
+<rect>.bottomLeft      A two-integer tuple: the coordinates of the lower-left corner of the rect
+
+<rect>.topright        A two-integer tuple: the coordinates of the upper-right corner of the rect
+
+<rect>.bottomright     A two-integer tuple: the coordinates of the lower-right corner of the rect
+
+<rect>.midtop          A two-integer tuple: the coordinates of the midpoint of the top edge of the rect
+
+<rect>.midleft         A two-integer tuple: the coordinates of the midpoint of the left edge of the rect
+
+<rect>.midbottom       A two-integer tuple: the coordinates of the midpoint of the bottom edge of the rect
+
+<rect>.midright        A two-integer tuple: the coordinates of the midpoint of the right edge of the rect
+
+<rect>.center          A two-integer tuple: the coordinates at the center of the rect
+
+<rect>.centerx         The x-coordinate of the center of the width of the rect
+
+<rect>.centery         The y-coordinate of the center of the height of the rect
+
+<rect>.size            A two-integer tuple: the (width, height) of the rect
+
+<rect>.width           The width of the rect
+
+<rect>.height          The height of the rect
+
+<rect>.w               The width of the rect (same as <rect>.width)
+
+<rect>.h               The height of the rect (same as <rect>.height)
 
 
 
