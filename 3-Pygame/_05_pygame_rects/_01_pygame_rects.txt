@@ -1,0 +1,54 @@
+The previous location animation keep tracks of the current x- and y-coordinates of the ball in separate variables.
+
+A different way:
+
+- Use the ball rect
+
+- Update the rect of the ball in every frame
+
+- Check if performing the update would cause any part of the rect to move outside an edge of the window
+
+Fewer variables and works with images of any size.
+
+
+
+Rect objects maintain a number of attributes (including the rectangle left, top, width, and height).
+
+They can be accessed using dot syntax:
+
+<rect>.x                The x-coordinate of the left edge of the rect
+<rect>.y                The y-coordinate of the top edge of the rect
+<rect>.left             The x-coordinate of the left edge of the rect (same as <rect>.x)
+<rect>.top              The y-coordinate of the top edge of the rect (same as <rect>.y)
+<rect>.right            The x-coordinate of the right edge of the rect
+<rect>.bottom           The y-coordinate of the bottom edge of the rect
+<rect>.topleft          A two-integer tuple: the coordinates of the upper-left corner of the rect
+<rect>.bottomLeft       A two-integer tuple: the coordinates of the lower-left corner of the rect
+<rect>.topright         A two-integer tuple: the coordinates of the upper-right corner of the rect
+<rect>.bottomright      A two-integer tuple: the coordinates of the lower-right corner of the rect
+<rect>.midtop           A two-integer tuple: the coordinates of the midpoint of the top edge of the rect
+<rect>.midleft          A two-integer tuple: the coordinates of the midpoint of the left edge of the rect
+<rect>.midbottom        A two-integer tuple: the coordinates of the midpoint of the bottom edge of the rect
+<rect>.midright         A two-integer tuple: the coordinates of the midpoint of the right edge of the rect
+<rect>.center           A two-integer tuple: the coordinates at the center of the rect
+<rect>.centerx          The x-coordinate of the center of the width of the rect
+<rect>.centery          The y-coordinate of the center of the height of the rect
+<rect>.size             A two-integer tuple: the (width, height) of the rect
+<rect>.width            The width of the rect
+<rect>.height           The height of the rect
+<rect>.w                The width of the rect (same as <rect>.width)
+<rect>.h                The height of the rect (same as <rect>.height)
+
+
+
+A rect also can be thought of and accessed as a list of four elements, an index can be used to get or set any individual part.
+
+Example using ballRect:
+
+ballRect[0] is the x value (or use ballRect.left)
+
+ballRect[1] is the y value (or use ballRect.top)
+
+ballRect[2] is the width (or use ballRect.width)
+
+ballRect[3] is the height (or use ballRect.height)
