@@ -37,9 +37,9 @@ while True:
     # 9 clear window before drawing it again
     window.fill(BLACK)
     
-    # 10 draw window elements
+    # 10 draw all window elements
 
-    # 11 update display
+    # 11 update window
     pygame.display.update()
 
     # 12 control game speed
