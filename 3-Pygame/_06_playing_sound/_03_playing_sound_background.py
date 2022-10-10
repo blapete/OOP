@@ -17,6 +17,9 @@ clock = pygame.time.Clock()
  
 
 ballImage = pygame.image.load('images/ball.png')
+bounceSound = pygame.mixer.Sound('sounds/boing.wav')
+pygame.mixer.music.load('sounds/background.mp3')
+pygame.mixer.music.play(-1, 0.0)
 
 
 ballRect = ballImage.get_rect()
@@ -38,14 +41,17 @@ while True:
     # 8
     if (ballRect.left < 0) or (ballRect.right >= WINDOW_WIDTH):
         xSpeed = -xSpeed  # reverse X direction
+        bounceSound.play()
 
     if (ballRect.top < 0) or (ballRect.bottom >= WINDOW_HEIGHT):
         ySpeed = -ySpeed  # reverse Y direction
+        bounceSound.play()
 
     # Update rectangle of the ball, using the speed in two directions
     ballRect.left = ballRect.left + xSpeed
     ballRect.top = ballRect.top + ySpeed
     # 8 end
+
 
     window.fill(BLACK)
     
@@ -53,23 +59,11 @@ while True:
 
     pygame.display.update()
 
-    clock.tick(FRAMES_PER_SECOND)
+    clock.tick(FRAMES_PER_SECOND)  # make pygame wait
 
 
 '''
-This code shows how to use and manipulate attributes of a rect object, neither better or worse than using separate variables
+To find more intricate handling of background sounds:
 
-The ball image is loaded and the get_rect() method is called to get the bounding ractangle of the image
-
-The method returns a rect object which then is stored in the ballRect variable
-
-ballRect.width and ballRect.height are used to get to get the width and height of the ball image
-
-Getting the values from the image this way makes the code much more adaptable bevause it will adapt to a graphic of any size
-
-The code uses attributes of the rectangle to check if any part of the ball's rectangle crosses a window edge
-
-Rather than update individual x- and y-coordinate variables, the left and top of ballRect are updated
-
-The second argument blit() can be either an (x,y) tuple or a rect, it uses the left and top position in the rect as the x- and y-cordinates
+https://www.pygame.org/docs/ref/music.html#module-pygame.mixer.music
 '''

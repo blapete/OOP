@@ -1,0 +1,39 @@
+Two types of sounds in pygame programs:
+
+1.
+Short sound effects
+
+All sound effects must live in external files and must be in either .wav or .ogg format.
+
+Two steps to play a short sound effect: 
+
+- Load the sound from an external sound file once
+
+<soundVariable> = pygame.mixer.Sound(<path to sound file>)
+
+<path to sound file> is a path string where the sound file can be found.
+
+- Play the sound at the appropriate time
+
+<soundVariable>.play()
+
+2.
+Background music
+
+Background music must live in external files and can be .mp3, .wav, or .ogg files.
+
+Two steps to play background music:
+
+- Load the sound file into the memory
+
+pygame.mixer.music.load(<path to sound file>)
+
+<path to sound file> is a path string where the sound file can be found.
+
+- Start playing the music
+
+pygame.mixer.music.play(<number of loops>, <starting position>)
+
+<number of loops> can be set to -1 for music to play forever.
+
+<starting position> can be set to 0 to play the sound from the beginning.
