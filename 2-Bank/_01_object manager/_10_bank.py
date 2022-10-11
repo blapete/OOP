@@ -1,7 +1,7 @@
 # Bank class
 
 
-from _09_Account import *
+from _09_account import *
 
 
 class Bank():

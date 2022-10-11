@@ -1,7 +1,7 @@
 # Bank class, Object manager object
 
 
-from _14_Account import *
+from _14_account import *
 
 
 class Bank():

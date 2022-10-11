@@ -1,7 +1,7 @@
 # Main program for controlling a Bank made up of Accounts
 
 
-from _15_Bank import *
+from _15_bank import *
    
 
 # Create an instance of the Bank

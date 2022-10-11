@@ -40,7 +40,7 @@ for oMonster in monsterList:
 '''
 The loop instantiates 20 Monsters
 
-Each Monster knows its own starting location in the gris and its individual speed
+Each Monster knows its own starting location in the grid and its individual speed
 
 The list of objects is created
 

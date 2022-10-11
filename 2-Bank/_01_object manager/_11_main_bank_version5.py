@@ -1,7 +1,7 @@
 # Top-level menu
 
 
-from _10_Bank import *
+from _10_bank import *
 
 
 oBank = Bank()
