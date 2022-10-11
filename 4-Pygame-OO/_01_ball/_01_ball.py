@@ -6,12 +6,12 @@ import random
 class Ball():
 
     def __init__(self, window, windowWidth, windowHeight):
-        self.window = window  # remember the window, to draw later
+        self.window = window  # remember the window
         self.windowWidth = windowWidth
         self.windowHeight = windowHeight
 
         self.image = pygame.image.load('images/ball.png')
-        # A rect is made up of [x, y, width, height]
+        # rect [x, y, width, height]
         ballRect = self.image.get_rect()
         self.width = ballRect.width
         self.height = ballRect.height
@@ -22,7 +22,7 @@ class Ball():
         self.x = random.randrange(0, self.maxWidth)
         self.y = random.randrange(0, self.maxHeight)
 
-        # random speed between -4 and 4, but not zero
+        # random speed between -4 and 4 not zero
         speedsList = [-4, -3, -2, -1, 1, 2, 3, 4] 
         self.xSpeed = random.choice(speedsList)
         self.ySpeed = random.choice(speedsList)
@@ -35,7 +35,7 @@ class Ball():
         if (self.y < 0) or (self.y >= self.maxHeight):
             self.ySpeed = -self.ySpeed
 
-        # update ball location, using the speed in two directions
+        # update ball location
         self.x = self.x + self.xSpeed
         self.y = self.y + self.ySpeed
 
@@ -45,7 +45,6 @@ class Ball():
 
 '''
 In the previous example (_05_location_animation), the data for the ball and the code to manipulate the ball are intertwined
-
 
 A more modular approach is to split the code into a Ball class and a main program that instantiates a Ball object and makes calls to its methods
 
