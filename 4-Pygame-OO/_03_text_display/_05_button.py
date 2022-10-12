@@ -50,18 +50,3 @@ class SimpleButton():
             self.window.blit(self.surfaceDown, self.xy)
         else:                                               # Idle or Disarmed
             self.window.blit(self.surfaceUp, self.xy)
-
-
-'''
-When the main program detects any event, it calls the handleEvent() method
-
-This method first checks that the event is one of MOUSEMOTION, MOUSEBUTTONUP, or MOUSEBUTTONDOWN
-
-The handleEvent() method returns True when the user completes a mouse click by pressing down on the button, then later releasing on the same button
-
-In all other cases handleEvent() returns False
-
-The draw() method uses the state of the object's instance variable self.state to decide which image (up or down) to draw
-
-This code uses a state machine approach
-'''
