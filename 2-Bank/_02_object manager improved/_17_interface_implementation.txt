@@ -1,7 +1,9 @@
 Implementation:
+
 The actual code of the class, which shows HOW an object does what it does.
 
 Interface:
+
 The collection of methods (and expected parameters) a class provides, which shows WHAT an object created from the class can do.
 
 

@@ -1,0 +1,20 @@
+The previous approach for checking and reacting to events:
+
+if oButton.handleEvent(event):
+    print('The button was clicked')
+
+This works for the SimpleButton class.
+
+
+
+Many other programming languages (and some Python packages) handle events with a callback.
+
+Callback:
+
+A function or method of an object that is called when a particular action, event, or condition happens.
+
+Consider a button object that is initialized to have a callback.
+
+When the user clicks the button, the button will call the callback function or method.
+
+That function or method executes whatever code is needed to react to the button click.

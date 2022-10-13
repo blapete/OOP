@@ -1,0 +1,36 @@
+import tkinter # a standard GUI library
+
+def myFunction():
+    print('myCallBackFunction was called')
+
+oButton = tkinter.Button(text='Click me', command=myFunction)
+
+
+
+Set up a callback:
+
+When creating an object or call one of an object's methods, pass the name of a function (or method of an object) to be called.
+
+When the button is created with tkinter, a function or method is passed in and will be called back when the user clicks the button.
+
+Here myFunction is being passed in as the function to be called back.
+
+The tkinter button remembers that function as the callback, and when the user clicks the resulting button it calls myFunction().
+
+
+
+A callback can be used when there is some action that may take some time.
+
+Instead of waiting for the action to finish and causing the program appear to freeze for a period of time, a callback can be set to be called when the action is completed.
+
+
+
+Example:
+
+Making a request across the internet.
+
+Rather than making a call and waiting for that call to return data, there are Python packages that allow the approach of making the call and setting a callback.
+
+This way the program can continue running and the user is not locked out of it.
+
+This involves multiple Python threads, but the technqiue of using a callback is the general way it is done.
