@@ -74,3 +74,9 @@ The values can be overwritten when making the function call.
 
 
 <keyWordParamater>=<default value> or <keyWordParamater> = <default value> both can be used, but the first is standard.
+
+
+
+The downside to using default values for functions and methods is that when the codebase gets large, it can be difficult to change the keyword name.
+
+It is very important to use default values that should suit thee widest possible range of users.

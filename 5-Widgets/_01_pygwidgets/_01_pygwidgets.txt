@@ -1,0 +1,87 @@
+The pygwidgets package contains the following classes:
+
+
+
+TextButton
+
+Button built with standard art, using a text string
+
+CustomButton
+
+Button with custom artwork
+
+TextCheckBox
+
+Checkbox with standard art, built from a text string
+
+CustomCheckBox
+
+Checkbox with custom artwork
+
+TextRadioButton
+
+Radio buttons with standard art, built from a text string
+
+CustomRadioButton
+
+Radio buttons with custom artwork
+
+DisplayText
+
+Field used to display output text
+
+InputText
+
+Field where the user can type text
+
+Dragger
+
+Allows the user to drag an image
+
+Image
+
+Displays an image at a location
+
+ImageCollection
+
+Displays one of a collection of images at a location
+
+Animation
+
+Displays a sequence of images
+
+SpriteSheetAnimation
+
+Displays a sequence of images from a single larger image
+
+
+
+https://pygwidgets.readthedocs.io/en/latest/
+
+
+
+Whenever instantiating any widget, pass in the window variable so the widget can draw itself in the application's window.
+
+Most widgets in pygwidgets work in a similar way:
+
+1.
+Before the main while loop starts, create an instance of the widget, passing in any initialization arguments.
+
+oWidget = pygwidgets.<SomeWidgetClass>(window, loc, <other aruguments as needed>)
+
+2.
+In the main loop, whenever any event happens, call the handleEvent() method of the widget (passing in the event object).
+
+While True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        if oWidget.handleEvent(event):
+            # The user has done something to oWidget that needs responding to
+            # Add code here
+
+3.
+At the bottom of the main loop, call the draw() method of the widget.
+
+oWidget.draw()
