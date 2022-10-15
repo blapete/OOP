@@ -20,13 +20,7 @@ oTextField = pygwidgets.DisplayText(window, (10, 400), value='Hello World')
 
 Also can customize the look of the output text by specifying any or all of the optional keyword parameters:
 
-oTextField = pygwidgets.DisplayText(window, (10, 400),
-                                    value='Some title text',
-                                    fontName='Courier',
-                                    fontSize=40,
-                                    width=150,
-                                    justified='center',
-                                    textColor=(255, 255, 0))
+oTextField = pygwidgets.DisplayText(window, (10, 400), value='Some title text', fontName='Courier', fontSize=40, width=150, justified='center', textColor=(255, 255, 0))
 
 The DisplayText class has a number of additional methods, the most important of which is setValue(), which is called to change the text drawn in the field:
 
@@ -58,12 +52,7 @@ oInputField = pygwidgets.InputText(window, (10,100))
 
 The text attributes of an InputText object can be customized by specifying optional keyword arguments:
 
-oInputField = pygwidgets.InputText(window, (10, 400),
-                                    value='Starting Text',
-                                    fontName='Helvetica',
-                                    fontSize=40,
-                                    width=150,
-                                    textColor=(255, 255, 0))
+oInputField = pygwidgets.InputText(window, (10, 400), value='Starting Text', fontName='Helvetica', fontSize=40, width=150, textColor=(255, 255, 0))
 
 After instantiating an InputText field, the typical code in the main loop would look like this:
 

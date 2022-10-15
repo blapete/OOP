@@ -28,19 +28,7 @@ TextButtons
 
 The actual definition of the __init__() method of the TextButton class in pygwidgets:
 
-def __init__(self, window, loc, text, 
-            width=None, 
-            height=40, 
-            textColor=PYGWIDGETS_BLACK, 
-            upColor=PYGWIDGETS_NORMAL_GRAY,
-            overColor=PYGWIDGETS_OVER_GRAY,
-            downColor=PYGWIDGETS_DOWN_GRAY,
-            fontName=DEFAULT_FONT_NAME,
-            fontSize=DEFAULT_FONT_SIZE,
-            soundOnClick=None,
-            enterToActivate=False,
-            callback=None,
-            nickname=None):
+def __init__(self, window, loc, text, width=None, height=40, textColor=PYGWIDGETS_BLACK, upColor=PYGWIDGETS_NORMAL_GRAY, overColor=PYGWIDGETS_OVER_GRAY, downColor=PYGWIDGETS_DOWN_GRAY, fontName=DEFAULT_FONT_NAME, fontSize=DEFAULT_FONT_SIZE, soundOnClick=None, enterToActivate=False, callback=None, nickname=None):
 
 To view the documentation of a class, call the built-in help() function in the Python shell:
 
@@ -60,15 +48,7 @@ The preceding line of code creates an "up" version of a button.
 
 Any of the default parameters can be overwritten with different keyword values:
 
-oButton = pygwidgets.TextButton(window, (50,50), 'Text Button',
-                                width=200,
-                                height=30,
-                                textColor=(255,255,128),
-                                upColor=(128,0,0),
-                                fontName='Courier',
-                                fontSize=14,
-                                soundOnClick='sounds/blip.wav',
-                                enterToActivate=True)
+oButton = pygwidgets.TextButton(window, (50,50), 'Text Button', width=200, height=30, textColor=(255,255,128), upColor=(128,0,0), fontName='Courier', fontSize=14, soundOnClick='sounds/blip.wav', enterToActivate=True)
 
 
 
@@ -84,13 +64,7 @@ The down, own, and disabled states are optional keyword arguments, and for any o
 
 It's more typical and strongly suggested to pass in paths for the optional images like so:
 
-restartButton = pygwidgets.CustomButton(window, (100, 430),
-                                        'images/RestartButtonUp.png',
-                                        down='images/RestartButtonDown.png',
-                                        over='images/RestartButtonOver.png',
-                                        disabled='images/RestartButtonDisabled.png',
-                                        soundOnClick='sounds/blip.wav',
-                                        nickname='restart')
+restartButton = pygwidgets.CustomButton(window, (100, 430), 'images/RestartButtonUp.png', down='images/RestartButtonDown.png', over='images/RestartButtonOver.png', disabled='images/RestartButtonDisabled.png', soundOnClick='sounds/blip.wav', nickname='restart')
 
 
 Using Buttons
