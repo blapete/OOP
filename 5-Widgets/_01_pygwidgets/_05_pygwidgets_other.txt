@@ -1,0 +1,39 @@
+Pygwidgets contains a number of other classes.
+
+
+
+The ImageCollection class shows any single image from a collection of images.
+
+Example:
+
+The programmer has images of a character facing front, left, back, and right.
+
+To represent all the potential images, build a dictionary:
+
+imageDict = {'front':'images/front.png', 'left':'images/left.png', 'back':'images/back.png', 'right':'images/right.png'}
+
+Then create an ImageCollection object, specifying this dictionary and the key of the image to start with.
+
+To change to a different image, call the replace() method and pass in a different key.
+
+Calling the draw() method at the bottom of the loop always shows the current image.
+
+
+
+The Dragger class displays a single image but allows the user to drag the image anywhere in the window.
+
+Its handlEvent() method is called in the event loop.
+
+When the user finishes dragging, handleEvent() returns True.
+
+Call the Dragger object's getMouseUpLoc() method to get the location where the user released the mouse button.
+
+
+
+The Animation and SpriteSheetAnimation classes handle building and showing an animation.
+
+Both require a set of images to iterate through.
+
+The Animation class gets the images from individual fiiles.
+
+The SpriteSheetAnimation class requires a single image with evenly spaced internal images.
