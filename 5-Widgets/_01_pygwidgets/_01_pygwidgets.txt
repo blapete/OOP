@@ -85,3 +85,19 @@ While True:
 At the bottom of the main loop, call the draw() method of the widget.
 
 oWidget.draw()
+
+
+
+Advantages to writing classes like those in pygwidgets:
+
+1.
+Classes can hide complexity in methods.
+
+Once the class is working correctly, never have to worry about the internal details again.
+
+2.
+Reuse the code by creating as many instances of a class as needed.
+
+Classes can provide basic functionality by including keyword parameters with well-chosen default values.
+
+The default values can be overwritten for customization.
