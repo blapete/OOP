@@ -1,0 +1,47 @@
+Different programmers have different views about the accessibility of an instance variable.
+
+Python provides for a loose interpretation of encapsulation by allowing direct access to instance variables using dot syntax.
+
+Client code can legally access an instance variable of an object by name using the syntax <object>.<instanceVariableName>.
+
+
+
+A strict interpretation of encapsulation says that client software should never be able to retrieve or change the value of an instance variable directly.
+
+The only way that a client can retrieve or change a value held in an object is to use a method provided by the class for this purpose.
+
+
+
+Direct Access
+
+Python does allow direct access to instance variables.
+
+class Person():
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+oPerson1 = Person('Joe Schmoe', 90000)
+oPerson2 = Person('Jane Smith', 90000)
+
+print(oPerson1.salary)      # Get
+print(oPerson2.salary)
+
+oPerson1.salary = 100000    # Set
+oPerson2.salary = 111111
+
+print(oPerson1.salary)
+print(oPerson2.salary)
+
+Python can run code like this that reaches into an object to directly get and set any instance variable using standard dot syntax.
+
+It is suggested that directly accessing an instance variable of an object is a dangerous practice, as it breaks the core idea of encapsulation.
+
+
+
+Examples, why direct access can be problematic:
+
+1.
+Changing the name of an instance variable.
+
