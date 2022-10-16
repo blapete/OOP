@@ -1,0 +1,54 @@
+Unlike variables used in regular functions, instance variables in objects persist across different method calls.
+
+
+
+Client:
+
+Any software that creates an object from a class and makes calls to the methods of that object.
+
+
+
+The duality of inside versus outside an object or class:
+
+When working inside a class (writing the code of the methods in a class), think about how the different methods of the class share the instance variables.
+
+What the interface should look like; what methods to provide, what the parameters for each are, and what should be used as default values.
+
+The design and implementation of the methods.
+
+From the outside, as a client programmer, know the interface of the class.
+
+What the class methods do, what arguments should be passed in, and what data is passed back from each method.
+
+
+
+A class therefor provides encapsulation by:
+
+- Hiding all details of implementation in its methods and instance variables.
+
+- Providing all the functionality a client needs from an object through its interface (the methods defined in the class).
+
+
+
+Objects own their data.
+
+In object-oriented programming, it's said that the data inside an object is owned by the object.
+
+Client code should only be concerned with the interface of a class and should not care about the implementation of its methods.
+
+
+
+Example, data ownership in the Person class:
+
+class Person():
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+The values of the instance variables self.name and self.salary are set whenever a new Person object is instantiated.
+
+oPerson1 = Person('Joe Schmoe', 90000)
+oPerson2 = Person('Jane Smith', 90000)
+
+Each person object owns its own set of the two instance variables.

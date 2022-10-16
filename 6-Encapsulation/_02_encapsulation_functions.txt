@@ -4,7 +4,7 @@ When you call a function, you generally don't care how the function works intern
 
 A well written function contains a series of steps that make up a larger single task, which does matter.
 
-The name of the function should describe the action code that it embodies.
+The name of the function should describe the action that its code embodies.
 
 
 
