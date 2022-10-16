@@ -1,0 +1,43 @@
+Functions are a example of encapsulation.
+
+When you call a function, you generally don't care how the function works internally.
+
+A well written function contains a series of steps that make up a larger single task, which does matter.
+
+The name of the function should describe the action code that it embodies.
+
+
+
+Example:
+
+The built-in len() function from the Python Standard Library, used to find the number of characters in a string or elements in a list.
+
+A string or list is passed in, and it returns the count.
+
+When writing code that calls this function, it does not matter how len() does what it does.
+
+It could be two lines or two thousand lines of code, one local variable or a hundred.
+
+The important thing to know is what argument to pass in and how to use the result that's returned.
+
+
+
+Example, a hand-made function:
+
+def calculateAverage(numbersList):
+    total = 0.0
+    for number in numbersList:
+        total = total + number
+    nElements = len(numbersList)
+    avergae = total / nElements
+    return average
+
+Once a function like this is tested and it works, no need to worry about the details of the implementation.
+
+The important thing to know is what argument(s) to send into the function and what it returns.
+
+In time if there is a much simpler or faster algorithm to calculate an average, rewrite the function in a new way.
+
+As long as the interface (inputs and outputs) does not change, there is no need to change any calls to the function.
+
+This type of modularization makes code more maintainable.

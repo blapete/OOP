@@ -1,0 +1,25 @@
+In programming, encapsulation means hiding internal details of state and behavior from any external code and having all code in one place.
+
+
+
+- How encapsulation works with functions
+
+- How encapsulation works with methods and objects
+
+
+
+Different interpretations of encapsulation:
+
+- Using direct access versus using getters and setters
+
+
+
+- How Python allows to mark an instance variable as private, indicating that it should not be accessed by code external to a class
+
+
+
+- The Python property decorator
+
+
+
+- The concept of abstraction in the design of classes
