@@ -47,17 +47,24 @@ Changing the name of an instance variable.
 
 Changing the name of an instance variable will break any client code that uses the original name directly.
 
-This can happen when the developer of a class decides that the initial choice of the name of the variable was not optimal because:
-
-- The name doesn't describe the data it represents clearly enough
-
-- The variable is a Boolean, but want to swap what True and False represent by renaming it (examples: closed to open, allowed to disallowed, active to disabled)
-
-- There was a spelling or capitalization mistake in the original name
-
-- The variable was originally a Boolean, but later realize that it needs to represent more than two values
-
-If the name of an instance variable in the class changes from self.<originalName> to self.<newName>, then any client software using the original name directly will break.
-
 2.
 Changing an instance variable into a calculation.
+
+Changing an instance variable can be problematic when the code of a class needs to change to meet new requirements.
+
+Having an interest rate self.interestRate in the bank account class, determined from a function calculateInterestRate().
+
+Depending when the last time calculateInterestRate() was called, the client software might get an outdated value (based on the money in their account).
+
+Using a function getInterestRate() would solve that porblem as it would always be calculated on the fly.
+
+3.
+Validating data
+
+Client code can too easliy set an instance variable to an invalid value.
+
+A better approach is to call a method in the class, whose job it is to set the value, include validation code in that method.
+
+
+
+Allowing direct access to instance variables from outside an object can bypass safeguards that were designed to protect the data of an object.
