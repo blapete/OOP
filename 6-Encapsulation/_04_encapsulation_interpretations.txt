@@ -45,3 +45,19 @@ Examples, why direct access can be problematic:
 1.
 Changing the name of an instance variable.
 
+Changing the name of an instance variable will break any client code that uses the original name directly.
+
+This can happen when the developer of a class decides that the initial choice of the name of the variable was not optimal because:
+
+- The name doesn't describe the data it represents clearly enough
+
+- The variable is a Boolean, but want to swap what True and False represent by renaming it (examples: closed to open, allowed to disallowed, active to disabled)
+
+- There was a spelling or capitalization mistake in the original name
+
+- The variable was originally a Boolean, but later realize that it needs to represent more than two values
+
+If the name of an instance variable in the class changes from self.<originalName> to self.<newName>, then any client software using the original name directly will break.
+
+2.
+Changing an instance variable into a calculation.
