@@ -1,7 +1,4 @@
-# Account class with exceptions
-
-
-# Define a custom exception
+# Custom exception
 class AbortTransaction(Exception):
     '''raise this exception to abort a bank transaction'''
     pass
@@ -51,13 +48,9 @@ class Account():
 
 
 '''
-There is no code in this class to handle an AbortTransaction exception
-
-Any time one is raised, control is passed back to the caller
-
-If the caller has no code to handle the exception, control is passed back to the previous caller
-
-This repeats up the stack of calls
-
-The main file will handle the exception in this case
+- There is no code in this class to handle an AbortTransaction exception
+- Any time one is raised, control is passed back to the caller
+- If the caller has no code to handle the exception, control is passed back to the previous caller
+- Repeats up the stack of calls
+- Main file will handle it
 '''

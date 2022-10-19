@@ -10,23 +10,12 @@ class PrivatePerson():
         self.name
 
 '''
-Python does name mangling and prepends a double underscore name with an underscore and name of the class
+- Python does name mangling and prepends a double underscore name with an underscore and name of the class
+- self.__privateData becomes self._PrivatePerson__privateData
+- It is a deterrent but not a guarantee client software can't access it
 
-self.__privateData becomes self._PrivatePerson__privateData
-
-It is a deterrent but not a guarantee client software can't access it
-
---------------------------
-
-Another way to mark it as one that should never be accessed
-
-self._name
-
-Naming like this is inteded to represent private data, client software should never attempt to access them directly
-
-Same with method names
-
-def _internalMethod(self):
-
-This is a convention not an enforcement
+- Another way to mark it as one that should never be accessed
+    self._name
+    def _internalMethod(self):
+- Naming like this is inteded to represent private data, client software should never attempt to access them directly
 '''

@@ -1,12 +1,10 @@
-# Main program for controlling a Bank made up of Accounts
-
+# Main program
+# Controls a Bank made up of Accounts
 
 from bank import *
    
-
-# Create an instance of the Bank
+# Bank instance
 oBank = Bank('9 to 5', '123 Main Street, Anytown, USA', '(650) 555-1212')
-
 
 #Main
 while True:
@@ -23,7 +21,7 @@ while True:
 
     action = input('What do you want to do? ')
     action = action.lower()
-    action = action[0]      # get the first letter
+    action = action[0]      # get first letter
     print()
 
     try:
@@ -44,24 +42,16 @@ while True:
         elif action == 'w':
             oBank.withdraw()
     except AbortTransaction as error:
-        print(error)        # Print out the text of the error message
+        print(error)        # Print error message
         
 
 print('Done')
 
 
 '''
-Top-level menu presented to the user and asks for an action
-
-There is now a try block around the calls to the methods with the oBank object
-
-If any method call raises an AbortTransaction exception, control will be transferred to the except statement
-
-The AbortTransaction exception that was raised at any lower level is handled in the except clause
-
-The value of the exception is assigned to a variable error 
-
-When the variable is printed the user will see the associated error message
-
-Since the exception was handled in the except clause, the program continues running
+- Top-level menu presented to the user
+- Try block around the calls to the methods with the oBank object
+- If any method call raises an AbortTransaction exception, control will be transferred to the except statement
+- The AbortTransaction exception that was raised at any lower level is handled in the except clause
+- Since the exception was handled in the except clause, the program will not stop
 '''

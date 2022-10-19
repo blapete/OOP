@@ -1,7 +1,4 @@
-# Bank class, Object manager object
-
-
-from account import *
+from account import * # This Bank class is an object manager object
 
 
 class Bank():
@@ -98,9 +95,7 @@ class Bank():
 
 
 '''
-There is no try/except block necessary in getUsersAccount()
-
-askForValidAccountNumber() is in a lower level than getUsersAccount()
-
-If an exception is raised this method will immediately return to its caller
+- There is no try/except block necessary in getUsersAccount()
+- askForValidAccountNumber() is in a lower level than getUsersAccount()
+- If an exception is raised this method will immediately return to its caller
 '''
