@@ -1,7 +1,0 @@
-The arguments in a call to a function and the parameters defined in the function have a one-to-one relationship.
-
-The value of the first argument is given to the first parameter, the value of the second argument is given to the second parameter, and so on.
-
-Python (and some other languages) allows the programmer to make some of the arguments optional.
-
-If an optional argument isn't provided in a call, the programmer can provide a default value to use in the function or method instead.

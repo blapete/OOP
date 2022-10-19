@@ -1,5 +1,0 @@
-Pygame does not come with built-in basic user interface elements, they need to be built by the programmer.
-
-This will demonstrate how standard widgets such as images, buttons, and input or output fields can be built as classes and how client code uses them.
-
-Building each element as a class allows programmers to incorporate multiple instances of each element when creating a GUI.
