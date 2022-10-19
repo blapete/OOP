@@ -12,24 +12,20 @@ class Example():
 
 oExample = Example(10)
 print(oExample.x)
+# >>> 10
 oExample.x = 20
 
 
-# A decorator is a method that takes another method as an argument and extends the way the original method works
-# Decorators can be functions that decorate functions or methods
-# There is a set of built-in decorators that provide a compromise between direct access and the use of getters and setters in a class
 
+# ---------------------------------------------------------------------------------------
 
-# Property:
-# An attribute of a class that appears to client code to be an instance variable, but instead causes a method to be called when it is accessed
-# Using a property to (indirectly) access data in an object
 
 
 class Student():
 
     def __init__(self, name, startingGrade=0):
         self.__name = name
-        self.grade = startingGrade
+        self.grade = startingGrade # store the starting grade into property grade, validates input
 
     @property
     def grade(self):
@@ -49,17 +45,17 @@ class Student():
 oStudent1 = Student('Joe Schmoe')
 oStudent2 = Student('Jane Smith')
 
-# Get the students' grades using the grade property
+
 print(oStudent1.grade)
 print(oStudent2.grade)
 print()
+# >>> 0
+# >>> 0
 
-# Set new values using the grade property
+
 oStudent1.grade = 85
 oStudent2.grade = 92
-
-oStudent1.grade = 'abc'
-
-
 print(oStudent1.grade)
 print(oStudent2.grade)
+# >>> 85
+# >>> 92
