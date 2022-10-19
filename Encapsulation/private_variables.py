@@ -8,7 +8,8 @@ class PrivatePerson():
     
     def setName(self, name):
         self.name
-
-# Python doesname mangling to self.__privateData => becomes self._PrivatePerson_privateData
-
-# Or can set instance variables to a single underscore self._example but this is a convention and client code can access easy
+        
+'''
+Python doesname mangling to self.__privateData => becomes self._PrivatePerson_privateData
+Or set instance variables to a single underscore self._example but this is a convention and client code can access easy
+'''

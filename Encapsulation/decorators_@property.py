@@ -1,3 +1,4 @@
+'''
 class Example():
     def __init__(self, startingValue):
         self._x = startingValue
@@ -14,18 +15,13 @@ oExample = Example(10)
 print(oExample.x)
 # >>> 10
 oExample.x = 20
-
-
-
-# ---------------------------------------------------------------------------------------
-
-
+'''
 
 class Student():
 
     def __init__(self, name, startingGrade=0):
         self.__name = name
-        self.grade = startingGrade # store the starting grade into property grade, validates input
+        self.grade = startingGrade   # store starting grade into the grade property, validate input
 
     @property
     def grade(self):

@@ -20,3 +20,8 @@ oPerson2.setSalary(111111)
 
 print(oPerson1.getSalary())
 print(oPerson2.getSalary())
+
+# >>> 90000
+# >>> 99000 
+# >>> 100000
+# >>> 111111

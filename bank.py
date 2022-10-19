@@ -1,10 +1,9 @@
-from account import * # This Bank class is an object manager object
-
+from account import *   # Bank class - object manager object
 
 class Bank():
 
     def __init__(self, hours, address, phone):
-        self.accountsDict = {}      # Manages a dictionary of Account objects
+        self.accountsDict = {}   # Manages dictionary of Account objects
         self.nextAccountNumber = 0
         self.hours = hours
         self.address = address
@@ -34,7 +33,7 @@ class Bank():
         oAccount = Account(theName, theStartingAmount, thePassword)
         newAccountNumber = self.nextAccountNumber
         self.accountsDict[newAccountNumber] = oAccount
-        self.nextAccountNumber = self.nextAccountNumber + 1     # Increment for next account created
+        self.nextAccountNumber = self.nextAccountNumber + 1   # Increment for next account created
         return newAccountNumber
 
     def openAccount(self):
@@ -83,7 +82,7 @@ class Bank():
         print('Phone:', self.phone)
         print('We currently have', len(self.accountsDict), 'account(s) open.')
 
-    # Special method for Bank administrator
+    # For Bank admin
     def show(self):
         print('*** Show ***')
         print('(This would typically require an admin password)')
@@ -93,9 +92,8 @@ class Bank():
             oAccount.show()
             print()
 
-
 '''
-- There is no try/except block necessary in getUsersAccount()
+- No try/except block necessary in getUsersAccount()
 - askForValidAccountNumber() is in a lower level than getUsersAccount()
 - If an exception is raised this method will immediately return to its caller
 '''

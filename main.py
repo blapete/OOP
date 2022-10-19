@@ -1,6 +1,5 @@
 # Main program
 # Controls a Bank made up of Accounts
-
 from bank import *
    
 # Bank instance
@@ -21,7 +20,7 @@ while True:
 
     action = input('What do you want to do? ')
     action = action.lower()
-    action = action[0]      # get first letter
+    action = action[0]   # get first letter
     print()
 
     try:
@@ -42,11 +41,9 @@ while True:
         elif action == 'w':
             oBank.withdraw()
     except AbortTransaction as error:
-        print(error)        # Print error message
+        print(error)   # Print error message
         
-
 print('Done')
-
 
 '''
 - Top-level menu presented to the user
