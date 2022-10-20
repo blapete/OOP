@@ -32,6 +32,11 @@ print(oStudent2.grade)
 # >>> 85
 # >>> 92
 
+'''
+The @property decorator makes it appear as if the client code is able to access an instance varible directly
+
+Behind the scenes Python turns such references into calls to the decorated getter and setter methods in the class
+'''
 
 '''
 class Example():

@@ -1,0 +1,13 @@
+Classes can hide their implementation and data from client code
+
+Ensure that a class procides all the functionality tha a client needs in a single place
+
+Objects own their data
+
+Use getter and setter methods
+
+Python allows direct access with dot syntax (avoidable)
+
+Python allows using underscores to mark or mangle variables
+
+Python allows use of the @property decoarator
