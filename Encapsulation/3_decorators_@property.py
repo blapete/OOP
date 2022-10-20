@@ -1,22 +1,3 @@
-'''
-class Example():
-    def __init__(self, startingValue):
-        self._x = startingValue
-
-    @property
-    def x(self):            # decorated getter method
-        return self._x
-
-    @x.setter
-    def x(self, value):     # decorated setter methed
-        self._x = value
-
-oExample = Example(10)
-print(oExample.x)
-# >>> 10
-oExample.x = 20
-'''
-
 class Student():
 
     def __init__(self, name, startingGrade=0):
@@ -50,3 +31,23 @@ print(oStudent1.grade)
 print(oStudent2.grade)
 # >>> 85
 # >>> 92
+
+
+'''
+class Example():
+    def __init__(self, startingValue):
+        self._x = startingValue
+
+    @property
+    def x(self):            # decorated getter method
+        return self._x
+
+    @x.setter
+    def x(self, value):     # decorated setter methed
+        self._x = value
+
+oExample = Example(10)
+print(oExample.x)
+# >>> 10
+oExample.x = 20
+'''
