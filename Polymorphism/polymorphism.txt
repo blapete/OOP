@@ -1,0 +1,5 @@
+With polymorphism the same message can be sent to multiple objects and each object will react differently depending what it is designed to do and the data available to it.
+
+Extends the concept of abstraction to a collection of classes allowing the client to ignore the implementation
+
+Allows for a system of classes that work in similar ways
