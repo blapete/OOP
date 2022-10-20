@@ -51,5 +51,7 @@ print('Stack is empty')
 '''
 The implementation of the stack is handled by the stack, the client does not need to know
 
-The clien
+Client code does not need to know or care how these methods were implemented or how the data was stored
+
+A stack is a mechanism for remembering data last in, first out (LIFO)
 '''
