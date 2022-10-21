@@ -24,7 +24,7 @@ class Fraction():
 
     def __str__(self): # custom magic print method
         output = '  Fraction: ' + str(self.numerator) + '/' + \
-                 str(self.denominator) + '\n' +\
+                 str(self.denominator) + '\n' + \
                 '  Value: ' + str(self.value) + '\n'
         return output     
 

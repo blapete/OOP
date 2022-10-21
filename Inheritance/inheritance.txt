@@ -1,0 +1,13 @@
+A mechanism for deriving a new class from an existing class.
+
+Rather than starting from scratch and duplicating code, write code for a new class that extends or differentiaties it from an existing class.
+
+The basic idea:
+
+Build a class (a subclass) that incorporates all the methods and instance variables of another class (a base class)  to reuse existing code.
+
+The new subclass can choose to use or override the methods of the base class or define its own methods.
+
+A method in a subclass can find the base class by using a call to super().
+
+"Programming by difference"
