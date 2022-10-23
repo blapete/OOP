@@ -7,10 +7,10 @@ class Employee():
             ratePerHour = float(ratePerHour)
         self.ratePerHour = ratePerHour
 
-    def getName(self):
+    def getName(self):  # getter
         return self.name
 
-    def getTitle(self):
+    def getTitle(self): # getter
         return self.title
 
     def payPerYear(self):
@@ -32,15 +32,15 @@ class Manager(Employee):
         self.reportsList = reportsList
         super().__init__(name, title)   #------------------------------------------------> SUPER(), tells Python figure out which class is the base class (superclass)
                                                                                            # and to call that class's __init__() method, adjusts arguments to include self
-    def getReports(self):                                                                  # as the first argument in the call => Employee.__init__(self, name, title), using this                 
+    def getReports(self):   # getter                                                       # as the first argument in the call => Employee.__init__(self, name, title), using this                 
         return self.reportsList                                                            # function call would actually work as well, super() is a shortcut
                                                                                            # Older versions of python required the code to be written:
-    def payPerYear(self, giveBonus=False):   # Same method as Employee                     # super(Employee, self).__init__(name, salary)
+    def payPerYear(self, giveBonus=False):   # same method as Employee                     # super(Employee, self).__init__(name, salary)
         pay = self.salary                    # this functionality will override            # super() is safer in case you change name of the base class
-        if giveBonus:
-            pay = pay + (.10 * self.salary)
-            print(self.name, 'gets a bonus for good work')
-        return pay       
+        if giveBonus:                                                       #|
+            pay = pay + (.10 * self.salary)                                 #|
+            print(self.name, 'gets a bonus for good work')                  #|
+        return pay                                                           #-----> overriding method must have exact same name but can have diff parameters
 
     def addEmployee(self, oEmployeeToAdd):
         self.reportsList.append(oEmployeeToAdd)

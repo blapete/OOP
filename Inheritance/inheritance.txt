@@ -11,3 +11,16 @@ The new subclass can choose to use or override the methods of the base class or 
 A method in a subclass can find the base class by using a call to super().
 
 "Programming by difference"
+
+
+Base class:
+The class that is inherited from;it serves as a strarting point for the subclass.
+
+Subclass:
+The class that is doing the inherting; it enhances the base class.
+
+Abstract class:
+A class that is not intended to be instantiated directly, but only used a s abase class by one or more subclasses. (in some other languages, an abstract class is referred to as a virtual class)
+
+Abstract method:
+A method that must be overriden in ever subclass.
