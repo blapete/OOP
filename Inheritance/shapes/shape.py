@@ -8,7 +8,7 @@ BLUE = (0, 0, 255)
 
 class Shape(ABC):  #------------------------------------------------------------> inherits from ABC (abstract base class)
                                                                                 # tells Python to prevent client code fro instantiating
-    def __init__(self, window, shapeType, maxWidth, maxHeight):                 # a Shape object directly, trying to do do so will result as:
+    def __init__(self, window, shapeType, maxWidth, maxHeight):                 # a Shape object directly
         self.window = window                                                    
         self.shapeType = shapeType
         self.color = random.choice((RED, GREEN, BLUE))
@@ -22,10 +22,10 @@ class Shape(ABC):  #------------------------------------------------------------
     def clickedInside(self, mousePoint):
         raise NotImplementedError
 
-    @abstractmethod                                                     # the @abstractmethod decorator must be overwritten by all subclasses of Shape
-    def getArea(self):                                                  # since these methods in this abstract class never run, the implementation here
-        raise NotImplementedError                                       # consists only of raise NotImplementedError to further emphasize the method                         
-                                                                        # doesn't do anything
+    @abstractmethod                                                     # the @abstractmethod decorator indicates these methods must be overwritten by all 
+    def getArea(self):                                                  # subclasses of Shape. Since these methods in this abstract class never run, the 
+        raise NotImplementedError                                       # implementation here consists only of raise NotImplementedError to further emphasize                          
+                                                                        # the method doesn't do anything
     @abstractmethod
     def draw(self):
         raise NotImplementedError

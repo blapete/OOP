@@ -17,6 +17,11 @@ class Rectangle(Shape): # inherits from Shape
         theArea = self.width * self.height
         return theArea
 
-# Throws an error
+''' If commented out, Python throws error >>> TypeError: Can't instantiate abstract class Rectangle with abstract method draw 
+    This means the code cannot instantiate a Rectangle object becasue it does not have a draw() method in the Rectangle class  '''
+
 #   def draw(self):
 #       pygame.draw.rect(self.window, self.color, (self.x, self.y, self.width, self.height))
+
+    def draw(self):
+        pygame.draw.rect(self.window, self.color, (self.x, self.y, self.width, self.height))
