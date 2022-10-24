@@ -1,5 +1,5 @@
 import pygame
-from Shape import *
+from shape import *
 
 class Square(Shape): # inherits from Shape
 
@@ -18,6 +18,3 @@ class Square(Shape): # inherits from Shape
 
     def draw(self):
         pygame.draw.rect(self.window, self.color, (self.x, self.y, self.widthAndHeight, self.widthAndHeight))
-
-
-# clickedInside(), getArea(), and draw() methods' implementation are specific to the square

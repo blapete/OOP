@@ -1,5 +1,5 @@
 import pygame
-from Shape import *
+from shape import *
 
 class Triangle(Shape): # inherits from Shape
 
@@ -33,5 +33,3 @@ class Triangle(Shape): # inherits from Shape
 
     def draw(self):
         pygame.draw.polygon(self.window, self.color, ((self.x, self.y + self.height), (self.x, self.y), (self.x + self.width, self.y)))
-
-# clickedInside(), getArea(), and draw() methods' implementation are specific to the triangle

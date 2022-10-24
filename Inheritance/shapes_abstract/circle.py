@@ -1,5 +1,5 @@
 import pygame
-from Shape import *
+from shape import *
 import math
 
 class Circle(Shape): # inherits from Shape
@@ -24,5 +24,3 @@ class Circle(Shape): # inherits from Shape
 
     def draw(self):
         pygame.draw.circle(self.window, self.color, (self.centerX, self.centerY), self.radius, 0)
-
-# clickedInside(), getArea(), and draw() methods' implementation are specific to the circle

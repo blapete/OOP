@@ -1,9 +1,10 @@
 import pygame
 import sys
 from pygame.locals import *
-from Square import *
-from Circle import *
-from Triangle import *
+from square import *
+from circle import *
+from triangle import *
+from rectangle import *
 import pygwidgets
 
 
@@ -20,37 +21,40 @@ clock = pygame.time.Clock()
 
 
 shapesList = []
-shapeClassesTuple = (Square, Circle, Triangle)
+shapeClassesTuple = (Square, Circle, Triangle, Rectangle)
 
-for i in range(0, N_SHAPES):                                                                # The (this) main code, as a client of these classes, implements Square, Circle, and Triangle
-    randomlyChosenClass = random.choice(shapeClassesTuple)                                  # objects without having to worry about the implementation of those classes.
-    oShape = randomlyChosenClass(window, WINDOW_WIDTH, WINDOW_HEIGHT)                       
-    shapesList.append(oShape)                                                               # It doesn't need to know that each is subclassed from a common Shape class.
+for i in range(0, N_SHAPES):
+    randomlyChosenClass = random.choice(shapeClassesTuple)
+    oShape = randomlyChosenClass(window, WINDOW_WIDTH, WINDOW_HEIGHT)
+    shapesList.append(oShape)
 
 oStatusLine = pygwidgets.DisplayText(window, (4, 4), 'Click on shapes', fontSize=28)
 
 
 while True:
+
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
 
         if event.type == MOUSEBUTTONDOWN:
-            for oShape in shapesList:
+            for oShape in reversed(shapesList):
                 if oShape.clickedInside(event.pos):
                     thisArea = oShape.getArea()
                     thisType = oShape.getType()
                     newText = 'Clicked on a ' + thisType + ' whose area is ' + str(thisArea)
                     oStatusLine.setValue(newText)
+                    break # only deal with the topmost shape
 
     window.fill(WHITE)
 
     # tell each shape to draw itself
     for oShape in shapesList:
         oShape.draw()
-
+        
     oStatusLine.draw()
 
     pygame.display.update()
+
     clock.tick(FRAMES_PER_SECOND)
