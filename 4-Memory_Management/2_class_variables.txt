@@ -1,0 +1,6 @@
+Instance variables are defined in a class and each object instantiated from a class gets its own set of all the instance varibles.
+
+Variables can also be defined at the class level.
+
+Class variable:
+A variable the is defined and owned by a class. Only one of each class variable exists, independent of how many instances of that class are created
