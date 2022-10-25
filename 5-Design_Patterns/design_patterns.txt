@@ -1,0 +1,18 @@
+Design patterns are reusable OOP solutions to commonly occurring software problems.
+
+Design pattern examples:
+- Using an object manager object to manage a list or dictionary of objects
+- Model View Controller
+
+Model View Controller:
+MVC is used to break a system into smaller, more manageable and more modifiable parts.It efnorces a clear split between a collection of data and the way that data is represented to the user.
+
+The pattern separates the functionality into three parts: the model, the view, and the controller. Each part has a clearly defined responsibility, and each is implemented by one of more objects.
+
+The model stores data.
+
+The view is responsible for drawing the information from the model in one of perhaps multiple ways.
+
+The controller typically creates the model and view objects, handles all user interactions, communicates changes to the model, and tells the view to display the data.
+
+This separation makes the overall system highly maintainable and modifiable.
